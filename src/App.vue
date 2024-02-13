@@ -9,8 +9,9 @@
 <script setup>
 import io from "socket.io-client";
 
-const socket = io('https://iot-elyc.onrender.com/');
-//const socket = io("http://localhost:5173");
+//const socket = io('https://iot-elyc.onrender.com/');
+const socket = io("http://192.168.1.140:3000/");
+
 
 const turnOn = () => {
   console.log("Connect to server on");
